@@ -1,0 +1,35 @@
+/* GOOGLE FONTS */
+// this is compiled
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600,700|PT+Serif:400,400i,700,700i&display=swap');
+
+body {
+    font-family: $ff-body;
+    font-size: 1.3125rem;
+    line-height: 1.5;
+    color: $color-brown-dark;
+    font-weight: $fw-normal;
+}
+
+h1, h2, h3, p, figure {
+    margin: 0;
+}
+
+.section__title,
+.section__subtitle {
+    font-family: $ff-title;
+    line-height: 1;
+}
+
+.section__title {
+    font-size: 4.75rem;
+    color: $color-blue-dark;
+}
+
+.section__subtitle {
+    font-size: 1.69rem;
+    color: $color-blue-light;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: .5em;
+}
