@@ -14,10 +14,19 @@
   margin: 3em auto;
   position: relative;
 
+  /* for each slide, the order attribute becomes */
+  &__item {
+    @include applyOrder(5);
+  }
+
   /* padding set to prevent buttons from touching screen edge*/
+  /* FIX: set order to prevent the button from being placed before grid carousel items */
   &__button {
     all: unset;
     padding: 0.5em;
+    &:last-of-type {
+      order: 99;
+    }
   }
 
   /* create fading effect on the left and right side of carousel */
